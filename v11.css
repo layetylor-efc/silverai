@@ -1,0 +1,47 @@
+/* silverai v1.1: 体験・アクセシビリティ改善。10章ポスターには影響させない */
+html{scroll-padding-top:184px}
+.chapter,.app-guide,.quick-start,#learning-progress{scroll-margin-top:184px}
+.font-chooser button{min-width:48px;min-height:48px}
+.control,.mode-btn,.copy-btn,.next-btn,.store-card a{min-height:48px}
+.quick-access{display:flex;gap:7px;overflow-x:auto;overscroll-behavior-inline:contain;padding:0 13px 10px;max-width:1440px;margin:auto;scrollbar-width:thin}
+.quick-access a{display:inline-flex;align-items:center;justify-content:center;min-height:46px;white-space:nowrap;background:#e6f4ff;border:1px solid #b9d7e8;color:#145e8b;text-decoration:none;border-radius:12px;padding:7px 13px;font-size:.86em;font-weight:800}
+.quick-access a:focus-visible,.quick-access a:hover{background:#cdeaff}
+.quick-start{max-width:1300px;margin:22px auto 8px;padding:0 clamp(15px,3vw,32px)}
+.quick-start-inner{border-radius:24px;background:#fff;border:2px solid #bcddec;box-shadow:var(--shadow);padding:clamp(20px,3vw,35px)}
+.quick-kicker{display:inline-block;font-size:.82em;color:#145b91;background:#e3f3fd;border-radius:18px;padding:5px 14px;font-weight:900}
+.quick-start h2{margin:10px 0 8px;font-size:clamp(1.5em,3vw,2.1em);line-height:1.35}
+.quick-start .quick-lead{margin:0 0 15px;color:#455d70}
+.quick-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.quick-step{border-radius:17px;border:1px solid #d3e5ee;background:#f7fcff;padding:18px}
+.quick-step h3{margin:0 0 7px;font-size:1.12em}
+.quick-step p{margin:7px 0}
+.quick-num{display:inline-grid;width:32px;height:32px;place-items:center;border-radius:50%;background:#1470ae;color:white;font-size:.9em;font-weight:900;margin-bottom:8px}
+.quick-btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;border-radius:13px;background:#106da9;border:2px solid #106da9;color:#fff;text-decoration:none;font-weight:900;padding:10px 16px;text-align:center;line-height:1.5;max-width:100%}
+.quick-btn.secondary{color:#106da9;background:white}
+.quick-btn:disabled{opacity:.55;cursor:not-allowed}
+.quick-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+#demo-prompt{display:block;width:100%;resize:vertical;min-height:88px;background:#fff;border:2px solid #9abed4;border-radius:12px;padding:12px;font-size:1em;line-height:1.65;color:#203047}
+.quick-note{border-left:5px solid #dfaa41;background:#fff8e7;padding:12px 14px;border-radius:0 12px 12px 0;margin:15px 0 0}
+.device-switch{margin-top:20px;border-top:1px solid #d3e5ee;padding-top:17px}
+.device-tabs{display:flex;gap:9px;flex-wrap:wrap}
+.device-tab{min-height:50px;border:2px solid #a4c7de;border-radius:13px;padding:9px 16px;background:#fff;color:#1d537c;font-weight:900}
+.device-tab[aria-selected="true"]{background:#126fa8;color:#fff}
+.device-guide{margin:12px 0 0;padding:14px;border:1px solid #cddfea;border-radius:14px;background:#f8fbfd}
+.device-guide[hidden]{display:none!important}
+.device-guide ol{padding-left:1.4em;margin:8px 0}
+.device-guide li{margin-bottom:8px}
+.quick-tools{border-top:1px solid #d3e5ee;padding-top:16px;margin-top:17px;display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.quick-status{min-height:26px;color:#225d84;font-weight:700}
+.progress-panel{max-width:1300px;margin:20px auto;padding:0 clamp(15px,3vw,32px)}
+.progress-inner{background:white;border:1px solid #d4e4ec;border-radius:18px;padding:18px}
+.progress-panel h2{margin:0 0 8px;font-size:1.17em}
+.progress-track{height:14px;border-radius:12px;overflow:hidden;background:#dcecf5;margin:12px 0}
+.progress-fill{width:0;height:100%;background:#198252;transition:width .2s}
+.read-chapter-button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;background:#e4f4ec;color:#146341;border:1px solid #89c3a3;border-radius:12px;padding:9px 16px;font-weight:800;margin-top:12px}
+.read-chapter-button[aria-pressed="true"]{background:#176948;color:#fff}
+.floating .float-btn{min-width:66px;min-height:56px;touch-action:none;user-select:none;-webkit-user-select:none}
+.presentation .quick-start,.presentation .progress-panel{display:none}
+@media(max-width:860px){.quick-steps{grid-template-columns:1fr}.quick-step{padding:15px}}
+@media(max-width:740px){html{scroll-padding-top:215px}.chapter,.app-guide,.quick-start,#learning-progress{scroll-margin-top:215px}.quick-access{padding-bottom:8px}.quick-start{margin-top:14px}.quick-actions .quick-btn{flex:1 1 150px}.topbar-inner{gap:8px}.quick-step h3{font-size:1.08em}}
+@media (prefers-reduced-motion:reduce){.progress-fill{transition:none}}
+@media print{.quick-access,.quick-start,.progress-panel,.read-chapter-button{display:none!important}}
